@@ -1,0 +1,435 @@
+/* 重置样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding-top: 60px;
+}
+
+/* 头部样式 */
+header {
+    background-color: #2c3e50;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+}
+
+/* 主内容区域 */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.content h2 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    border-left: 4px solid #3498db;
+    padding-left: 1rem;
+}
+
+.content p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* 页脚样式 */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}/* 一级页面特有样式 */
+
+/* 英雄区域图片 */
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border: 3px solid white;
+}
+
+/* 图片画廊 */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.image-item {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.image-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.image-item p {
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0;
+}
+
+/* 特色内容区域 */
+.feature-section {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 10px;
+    border-left: 5px solid #3498db;
+}
+
+.feature-section h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.feature-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.feature-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.feature-text h4 {
+    color: #3498db;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.feature-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* 导航链接 */
+.navigation-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.nav-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .feature-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    .navigation-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .hero-image {
+        height: 200px;
+        object-fit: cover;
+    }
+}/* 二级页面诗词特有样式 */
+
+/* 诗词英雄区域 */
+.poetry-hero {
+    background: linear-gradient(135deg, #8e44ad 0%, #3498db 100%);
+}
+
+/* 诗词区域 */
+.poetry-section {
+    margin: 3rem 0;
+}
+
+.poetry-section h2 {
+    color: #2c3e50;
+    border-left: 5px solid #8e44ad;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+/* 诗词卡片 */
+.poetry-item {
+    margin-bottom: 2rem;
+}
+
+.poetry-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 1px solid #e9ecef;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.poetry-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* 中英文诗词样式区分 */
+.chinese-poetry {
+    border-left: 4px solid #e74c3c;
+}
+
+.foreign-poetry {
+    border-left: 4px solid #3498db;
+}
+
+.poetry-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #f8f9fa;
+    padding-bottom: 0.5rem;
+}
+
+/* 诗词内容 */
+.poetry-content {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border-left: 4px solid #95a5a6;
+}
+
+.poetry-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.poetry-translation {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    color: #7f8c8d;
+    font-style: italic;
+    border-left: 2px solid #bdc3c7;
+    padding-left: 1rem;
+}
+
+.poetry-desc {
+    color: #5d6d7e;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    background: #fafafa;
+    padding: 1rem;
+    border-radius: 6px;
+    border-left: 3px solid #d5dbdb;
+}
+
+/* 互动区域 */
+.interactive-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 3rem 0;
+    text-align: center;
+    border: 2px dashed #bdc3c7;
+}
+
+.interactive-content h2 {
+    color: #8e44ad;
+    margin-bottom: 1rem;
+}
+
+.interactive-content p {
+    margin-bottom: 1.5rem;
+    color: #5d6d7e;
+}
+
+.poem-display {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#randomPoemText {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.poem-author {
+    color: #7f8c8d;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .poetry-card {
+        padding: 1.5rem;
+    }
+    
+    .poetry-content {
+        padding: 1rem;
+    }
+    
+    .poetry-text {
+        font-size: 1rem;
+    }
+    
+    .interactive-section {
+        padding: 1.5rem;
+    }
+}
+
+/* 诗词卡片动画 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.poetry-item {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.poetry-item:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.poetry-item:nth-child(3) {
+    animation-delay: 0.2s;
+}
